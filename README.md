@@ -11,15 +11,18 @@
 }
 
 ## Step 1 Shell 1
+
 # -------runs exfiltration server (separeted console)
-$ cd ./exfiltration-server/
-$ sudo ./run-server.sh
+cd ./exfiltration-server/
+sudo ./run-server.sh
 
 ## Step 2 Shell 2
+
 # ------runs msfconsole (separeted console)
 ./scripts/run-msfrpc.py
 
 ## Step 3 Shell 3
+
 # ------runs shennina
 ./shennina.py --initialize-exploits-tree
 

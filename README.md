@@ -1,6 +1,7 @@
 # Shennina
 
 /config/msfrpg-config.json
+
 {
   "password": "root",
   "user": "root",

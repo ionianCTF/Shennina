@@ -1,15 +1,24 @@
 # Shennina
 
-Shell 1
+/config/msfrpg-config.json
+{
+  "password": "root",
+  "user": "root",
+  "host": "172.17.0.1",
+  "port": 55553,
+  "ssl": false
+}
+
+# 1 Shell 1
 # -------runs exfiltration server (separeted console)
 $ cd ./exfiltration-server/
 $ sudo ./run-server.sh
 
-Shell 2
+# 2 Shell 2
 # ------runs msfconsole (separeted console)
 ./scripts/run-msfrpc.py
 
-Shell 3
+# 3 Shell 3
 # ------runs shennina
 ./shennina.py --initialize-exploits-tree
 
@@ -24,11 +33,4 @@ sudo ./shennina.py --target 127.0.0.1 --lhost $target_IP --training-mode
 sudo ./shennina.py --target 127.0.0.1 --lhost $target_IP --exploitation-mode
 
 
-/config/msfrpg-config.json
-{
-  "password": "root",
-  "user": "root",
-  "host": "172.17.0.1",
-  "port": 55553,
-  "ssl": false
-}
+

@@ -10,16 +10,16 @@
   "ssl": false
 }
 
-# 1 Shell 1
+## Step 1 Shell 1
 # -------runs exfiltration server (separeted console)
 $ cd ./exfiltration-server/
 $ sudo ./run-server.sh
 
-# 2 Shell 2
+## Step 2 Shell 2
 # ------runs msfconsole (separeted console)
 ./scripts/run-msfrpc.py
 
-# 3 Shell 3
+## Step 3 Shell 3
 # ------runs shennina
 ./shennina.py --initialize-exploits-tree
 
